@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: lightblue;
+}
+.Title {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  text-shadow: black 2px 2px;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.Card {
+  padding-bottom: 20px;
+  box-shadow: 0 15px 25px #817c7c33;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  margin-left:5px;
+  height: 600px;
+  background-color: white;
+}
+.store {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+button {
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid;
+}
+button:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width:640px) {
+  .Title {
+    font-size: 20px;
+  }
+  .Card {
+    height: 250px;
+  }
+  .store {
+    height: 150px;
+    width: 150px;
+  }
+  button {
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .desc {
+    font-size: 8px;
+  }
+}
